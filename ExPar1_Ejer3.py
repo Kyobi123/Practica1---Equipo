@@ -1,7 +1,4 @@
 def a_binario(n: int) -> str:
-    """Devuelve la representación binaria de n usando recursión.
-       n debe ser un entero >= 0.
-    """
     if n == 0:
         return "0"
     def rec(x: int) -> str:
@@ -23,3 +20,4 @@ def pedir_entero_no_negativo(prompt: str = "Introduce un entero no negativo: ") 
 if __name__ == "__main__":
     n = pedir_entero_no_negativo("Introduce un número entero positivo (puede ser 0): ")
     print(f"El número {n} en binario es: {a_binario(n)}")
+
